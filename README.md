@@ -1,6 +1,8 @@
 # Hey, I'm Benyamin
 
-CS student at Westminster (predicted First) — I build full-stack web apps, AI pipelines, and the occasional robot.
+Third year CS student at Westminster (predicted First) based in London. I spend most of my time building things that sit at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms. 
+
+Currently looking for junior backend / AI engineering roles.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/benyamin-mahamed)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/BenyaminMahamed)
@@ -9,20 +11,41 @@ CS student at Westminster (predicted First) — I build full-stack web apps, AI 
 
 ## What I'm working on
 
-- Building a RAG-powered research assistant with FAISS, Sentence-Transformers, and Gemini
-- Exploring Physics-Informed Neural Networks for scientific imaging
-- Pushing embedded CV pipelines to sub-3ms latency on Raspberry Pi
+- **Lexis** — a full-stack RAG research assistant. The interesting parts: semantic chunking with overlapping windows, FAISS inner-product similarity search, and a multi-mode LLM layer (Q&A, summarise, critique, compare) that always cites the exact chunks it used. Built it because existing tools like ChatPDF felt like black boxes with no source grounding.
+- Exploring Physics-Informed Neural Networks — applying physics-aware loss constraints to neural nets for scientific imaging problems
+- Squeezing more performance out of embedded CV pipelines — currently at sub-3ms latency on a Pi 5, trying to push further
+
+---
 
 ## What I've shipped
 
 ### [Lexis — AI Research Assistant](https://github.com/BenyaminMahamed/AI-Research-Assistant)
-Full-stack RAG pipeline — upload academic PDFs, ask questions, get source-grounded answers. Built with Django, FAISS, Sentence-Transformers, and Gemini 2.0 Flash. Four analysis modes: Q&A, summarise, critique, compare.
 
-### [The BluePrint Brief](https://theblueprintbrief.com) (Private)
-Co-founded and built a Django-powered editorial platform from scratch. 1,000+ active users, custom RBAC, automated SEO, high-availability hosting.
+A RAG pipeline I built from scratch — no LangChain, no abstractions, just the raw pipeline. PDFs go in, get extracted page-by-page with PyMuPDF, chunked into 500-word overlapping windows, embedded with `all-MiniLM-L6-v2` (384-dim, normalised), and indexed in FAISS. Queries hit the same embedding model, do nearest-neighbour search, retrieve the top-k chunks, and pass them as grounded context to Gemini 2.0 Flash.
+
+Four modes: Q&A, structured summarisation, peer-review style critique, and multi-paper comparison. Every answer surfaces the source chunks and page numbers it was based on — no hallucination hiding behind vague responses.
+
+**Stack:** Django, DRF, FAISS, Sentence-Transformers, PyMuPDF, Gemini 2.0 Flash, SQLite
+
+---
+
+### [The BluePrint Brief](https://theblueprintbrief.com) *(Private Repo)*
+
+Co-founded this and built the entire platform as lead developer. It's a Django-powered editorial CMS — think a lightweight version of what a newsroom would run internally. Built custom role-based access control from scratch (writer, editor, admin tiers), an editorial workflow system, automated SEO metadata generation, and integrated analytics tracking.
+
+Currently serving 1,000+ active users. The interesting engineering challenge was building a content delivery system that stays fast under real traffic without reaching for a CDN or expensive infrastructure — solved mostly through query optimisation and aggressive caching at the Django layer.
+
+**Stack:** Django, PostgreSQL, JavaScript, HTML/CSS, Linux
+
+---
 
 ### [Autonomous Driving Prototype](https://github.com/BenyaminMahamed/Autonomous-Self-Driving-Car)
-Real-time lane detection and obstacle avoidance on a Pi 5. Hit 70+ FPS and 2.25ms latency on hardware that really shouldn't be doing that.
+
+Real-time lane detection and obstacle avoidance running on a Raspberry Pi 5. The target was 60 FPS — ended up hitting 70+ FPS at 2.25ms latency, which on a Pi is genuinely not supposed to be possible. Got there through frame pipeline optimisation, model quantisation, and being very aggressive about cutting anything that wasn't doing useful work in the inference loop.
+
+Built with OpenCV and PyTorch. The computer vision pipeline handles lane boundary detection, obstacle classification, and real-time steering decisions — all on-device, no cloud inference.
+
+**Stack:** Python, OpenCV, PyTorch, Raspberry Pi 5, Arduino
 
 ---
 
@@ -72,7 +95,3 @@ Real-time lane detection and obstacle avoidance on a Pi 5. Hit 70+ FPS and 2.25m
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-benyamin--mahamed-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/benyamin-mahamed)
 [![Email](https://img.shields.io/badge/Email-benyaminmahamed%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:benyaminmahamed@gmail.com)
-
----
-
-*When not coding, I play basketball at a competitive level — Student Athlete most of my life.*

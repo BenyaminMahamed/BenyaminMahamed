@@ -8,53 +8,57 @@
 
 ---
 
-### 🚀 About Me
-I am a disciplined and team-oriented developer with a track record of building scalable platforms and AI-driven systems. From co-founding publishing platforms with **1,000+ users** to presenting complex group projects to industry experts at **SKY**, I focus on high-performance code and hardware-software integration.
-
-*   **Current Focus:** Building an Autonomous Self-Driving Car prototype (PiCar-X) and optimizing RAG pipelines for research.
-*   **Background:** 4× Brent Cup Winner (Basketball) — bringing the same competitive drive and team discipline to the engineering room.
-
----
-
-### 🛠️ Technical Toolkit
-
-| Category | Skills |
-| :--- | :--- |
-| **Languages** | Python, Java, JavaScript, SQL, Bash |
-| **AI & ML** | PyTorch, FAISS, Sentence-Transformers, OpenCV, Q-Learning |
-| **Frameworks** | Django, Bootstrap, REST Framework |
-| **Infrastructure** | Linux (Ubuntu/Kali), Git, Okta, Mac Engineering (Enterprise) |
-| **Hardware** | Raspberry Pi 5, PiCar-X, I2C/SPI Sensor Integration |
+### 🌟 Featured Deployment (Private Repo)
+#### 📰 [The BluePrint Brief](https://theblueprintbrief.com)
+**Role:** Co-Founder & Lead Developer  
+As the technical lead for this publishing platform, I architected a custom Django-based system serving **1,000+ active users**. Due to proprietary security and enterprise configurations, the repository remains **Private**, but the live deployment showcases:
+*   **Scalable Backend:** Custom editorial workflows and role-based access control (RBAC).
+*   **Analytics & SEO:** Integrated tracking and automated metadata optimization.
+*   **Performance:** High-availability hosting with a focus on low-latency content delivery.
 
 ---
 
-### 📂 Featured Repositories
+### 🚀 Open Source Highlights
 
 #### 🤖 [AI Research Assistant](https://github.com/BenyaminMahamed/AI-Research-Assistant)
-A full-stack RAG (Retrieval-Augmented Generation) pipeline. It uses **FAISS** and **Sentence-Transformers** to allow users to semantically search and query academic PDFs in real-time.
+A full-stack RAG (Retrieval-Augmented Generation) pipeline using **FAISS** and **Sentence-Transformers** to allow users to semantically search and query academic PDFs in real-time.
 
 #### 🏎️ [Autonomous Driving Prototype](https://github.com/BenyaminMahamed/Autonomous-Self-Driving-Car)
-A computer vision pipeline for lane detection and obstacle avoidance, achieving **70+ FPS** and **2.25ms latency** on resource-constrained embedded hardware.
-
-#### 📰 [The BluePrint Brief](https://theblueprintbrief.com)
-A Django-based publishing platform supporting editorial workflows, analytics, and 1,000+ active users.
+Real-time computer vision pipeline for lane detection and obstacle avoidance, achieving **70+ FPS** and **2.25ms latency** on resource-constrained embedded hardware.
 
 ---
 
-### 🏆 Achievements
-*   **Predicted First-Class:** 71.83% Year 2 Average.
-*   **Lead Developer:** 84% Grade in Software Development Group Project.
-*   **Certifications:** Stanford Online - Quantum Mechanics for Scientists and Engineers.
+### 🛠️ Languages & Tools
+
+**Languages**  
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![SQL](https://img.shields.io/badge/sql-%2300758F.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+**Frameworks & Libraries**  
+![Django](https://img.shields.io/badge/django-%23092e20.svg?style=for-the-badge&logo=django&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+**Tools & Infrastructure**  
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
+![Okta](https://img.shields.io/badge/Okta-007DC1?style=for-the-badge&logo=okta&logoColor=white)
+![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-### 📈 GitHub Stats
+### 📈 Stats
 ![Benyamin's GitHub stats](https://github-readme-stats.vercel.app/api?username=BenyaminMahamed&show_icons=true&theme=transparent)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BenyaminMahamed&layout=compact&theme=transparent)
 
 ---
 
-### 📫 Let's Connect
-- 📧 Email: benyaminmahamed@gmail.com
+### 📫 Connect with Me
 - 💼 LinkedIn: [benyamin-mahamed](https://linkedin.com/in/benyamin-mahamed)
-- 🏀 Fun Fact: When I'm not coding, I'm playing for the University of Westminster Men's BUCS team.
+- 📧 Email: benyaminmahamed@gmail.com
+- 🏀 Fun Fact: 4× Brent Cup Winner & University BUCS Basketball Player.

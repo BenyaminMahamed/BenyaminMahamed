@@ -35,6 +35,8 @@ Co-founded this and built the entire platform as lead developer. It's a Django-p
 
 Currently serving 1,000+ active users. The interesting engineering challenge was building a content delivery system that stays fast under real traffic without reaching for a CDN or expensive infrastructure — solved mostly through query optimisation and aggressive caching at the Django layer.
 
+Can be viewed from an architecture standpoint at [The BluePrint Brief Architecture](https://github.com/BenyaminMahamed/blueprint-brief-architecture)
+
 **Stack:** Django, PostgreSQL, JavaScript, HTML/CSS, Linux
 
 ---

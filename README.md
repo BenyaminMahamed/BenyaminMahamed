@@ -34,6 +34,7 @@ Architected a custom Django system serving **1,000+ active users**.
 *   **Scalable Backend:** Engineered custom editorial workflows and role-based access control (RBAC).
 *   **Growth Tech:** Integrated tracking and automated SEO metadata optimization.
 *   **Performance:** High-availability hosting with a focus on low-latency content delivery.
+*   **View at**[BluePrint Brief Architecture](https://github.com/BenyaminMahamed/blueprint-brief-architecture)
 
 ### 🤖 [AI Research Assistant](https://github.com/BenyaminMahamed/AI-Research-Assistant)
 A full-stack RAG pipeline using **FAISS** and **Sentence-Transformers** to allow users to semantically query academic PDFs in real-time.

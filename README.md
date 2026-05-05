@@ -56,14 +56,10 @@ Real-time computer vision pipeline for lane detection and obstacle avoidance, ac
 
 ---
 
-## 📈 Stats
-![Benyamin's GitHub stats](https://github-readme-stats.vercel.app/api?username=BenyaminMahamed&show_icons=true&theme=transparent)
-
----
 
 ## 📫 How to Reach Me
 *   💼 **LinkedIn:** [benyamin-mahamed](https://linkedin.com/in/benyamin-mahamed)
 *   📧 **Email:** benyaminmahamed@gmail.com
 
 ## 🏀 Fun Fact
-When not working on coding projects I enjoy playing basketball at a competitve level and have been a Student Athelete for the majority of my life.
+When not working on coding projects I enjoy playing basketball at a competitve level and have been a Student Athelete for most of my life.

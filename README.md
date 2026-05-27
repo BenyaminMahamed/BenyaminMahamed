@@ -1,6 +1,6 @@
 # Hey, I'm Benyamin
 
-Third year CS student at Westminster (predicted First) based in London. I spend most of my time building things that sit at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms. 
+CS Graduate based in London. I spend most of my time building things that sit at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms. 
 
 Currently looking for junior backend / AI engineering roles.
 
@@ -89,7 +89,7 @@ Built with OpenCV and PyTorch. The computer vision pipeline handles lane boundar
 ![OWASP](https://img.shields.io/badge/OWASP-%23000000.svg?style=for-the-badge&logo=owasp&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-![Okta](https://img.shields.io/badge/Okta-007DC1?style=for-the-badge&logo=okta&logoColor=white)
+
 
 ---
 

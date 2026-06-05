@@ -41,7 +41,7 @@ Can be viewed from an architecture standpoint at [The BluePrint Brief Architectu
 
 ---
 
-### [Autonomous Driving Prototype](https://github.com/BenyaminMahamed/Autonomous-Self-Driving-Car)
+### [Autonomous Driving Prototype](https://github.com/BenyaminMahamed/Autonomous-Driving-Prototype)
 
 Real-time lane detection and obstacle avoidance running on a Raspberry Pi 5. The target was 60 FPS — ended up hitting 70+ FPS at 2.25ms latency, which on a Pi is genuinely not supposed to be possible. Got there through frame pipeline optimisation, model quantisation, and being very aggressive about cutting anything that wasn't doing useful work in the inference loop.
 

@@ -1,6 +1,6 @@
 # Hey, I'm Benyamin
 
-CS Graduate based in London. I spend most of my time building things that sit at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms. 
+CS graduate (BSc Hons, University of Westminster, 2026) based in London. I spend most of my time building things that sit at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms.
 
 Currently looking for junior backend / AI engineering roles.
 
@@ -11,9 +11,8 @@ Currently looking for junior backend / AI engineering roles.
 
 ## What I'm working on
 
-- **Lexis** — a full-stack RAG research assistant. The interesting parts: semantic chunking with overlapping windows, FAISS inner-product similarity search, and a multi-mode LLM layer (Q&A, summarise, critique, compare) that always cites the exact chunks it used. Built it because existing tools like ChatPDF felt like black boxes with no source grounding.
-- Exploring Physics-Informed Neural Networks — applying physics-aware loss constraints to neural nets for scientific imaging problems
-- Squeezing more performance out of embedded CV pipelines — currently at sub-3ms latency on a Pi 5, trying to push further
+- **Basketball GM simulation engine** — a possession-based dynasty simulator. The interesting part is believability: the engine is tuned phase-by-phase against real NBA statistical distributions (scoring, margins, pace) rather than hand-waved randomness, with a batch harness running 1,000-game validation sweeps.
+- Squeezing more performance out of embedded CV pipelines on the Raspberry Pi 5 — profiling where the milliseconds actually go in a classical vision loop
 
 ---
 
@@ -23,7 +22,7 @@ Currently looking for junior backend / AI engineering roles.
 
 A RAG pipeline I built from scratch — no LangChain, no abstractions, just the raw pipeline. PDFs go in, get extracted page-by-page with PyMuPDF, chunked into 500-word overlapping windows, embedded with `all-MiniLM-L6-v2` (384-dim, normalised), and indexed in FAISS. Queries hit the same embedding model, do nearest-neighbour search, retrieve the top-k chunks, and pass them as grounded context to Gemini 2.0 Flash.
 
-Four modes: Q&A, structured summarisation, peer-review style critique, and multi-paper comparison. Every answer surfaces the source chunks and page numbers it was based on — no hallucination hiding behind vague responses.
+Four modes: Q&A, structured summarisation, peer-review style critique, and multi-paper comparison. Every answer surfaces the source chunks and page numbers it was based on — no hallucination hiding behind vague responses. Built it because existing tools like ChatPDF felt like black boxes with no source grounding.
 
 **Stack:** Django, DRF, FAISS, Sentence-Transformers, PyMuPDF, Gemini 2.0 Flash, SQLite
 
@@ -31,23 +30,25 @@ Four modes: Q&A, structured summarisation, peer-review style critique, and multi
 
 ### [The BluePrint Brief](https://theblueprintbrief.com) *(Private Repo)*
 
-Co-founded this and built the entire platform as lead developer. It's a Django-powered editorial CMS — think a lightweight version of what a newsroom would run internally. Built custom role-based access control from scratch (writer, editor, admin tiers), an editorial workflow system, automated SEO metadata generation, and integrated analytics tracking.
+Co-founded this live editorial platform for legal and commercial content, and develop it as part of a three-person engineering team. It's a Django-powered editorial CMS — think a lightweight version of what a newsroom would run internally.
 
-Currently serving 1,000+ active users. The interesting engineering challenge was building a content delivery system that stays fast under real traffic without reaching for a CDN or expensive infrastructure — solved mostly through query optimisation and aggressive caching at the Django layer.
+My ownership covers the Render deployment, the Cloudinary media layer, domain and email infrastructure, and primary production debugging. Features I've shipped end-to-end include an access-gated Student Resources system, Beehiiv newsletter integration, and the submission notification pipeline. Currently serving 1,000+ active users.
 
 Can be viewed from an architecture standpoint at [The BluePrint Brief Architecture](https://github.com/BenyaminMahamed/blueprint-brief-architecture)
 
-**Stack:** Django, PostgreSQL, JavaScript, HTML/CSS, Linux
+**Stack:** Django, PostgreSQL, JavaScript, HTML/CSS, Linux, Gunicorn
 
 ---
 
-### [Autonomous Driving Prototype](https://github.com/BenyaminMahamed/Autonomous-Driving-Prototype)
+### [Autonomous Navigation System](https://github.com/BenyaminMahamed/FINALYEARPROJECT)
 
-Real-time lane detection and obstacle avoidance running on a Raspberry Pi 5. The target was 60 FPS — ended up hitting 70+ FPS at 2.25ms latency, which on a Pi is genuinely not supposed to be possible. Got there through frame pipeline optimisation, model quantisation, and being very aggressive about cutting anything that wasn't doing useful work in the inference loop.
+My final year project — real-time lane following and obstacle detection on a Raspberry Pi 5, built as a proof-of-concept for affordable assistive mobility technology. The core question: can you replicate the navigation capabilities of £5,000+ commercial systems for under £200?
 
-Built with OpenCV and PyTorch. The computer vision pipeline handles lane boundary detection, obstacle classification, and real-time steering decisions — all on-device, no cloud inference.
+From a 10,298-frame integration session on physical hardware: ~10ms average processing latency against a 200ms target (20× margin), ~14 FPS sustained, 100% obstacle detection reliability with zero false positives, manual override response under 10ms. All CPU-only, on-device, no cloud inference.
 
-**Stack:** Python, OpenCV, PyTorch, Raspberry Pi 5, Arduino
+Deliberately Classical CV rather than deep learning — YOLOv5 on a Pi CPU runs at 80–120ms per frame before anything else, and a probabilistic model can't guarantee the 100% detection reliability a safety-critical assistive system needs. A class-agnostic blob detector can, in under 5ms.
+
+**Stack:** Python, OpenCV, NumPy, Picamera2, Raspberry Pi 5, PiCar-X SDK
 
 ---
 
@@ -63,11 +64,9 @@ Built with OpenCV and PyTorch. The computer vision pipeline handles lane boundar
 ![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 ### AI / ML
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-%23FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=black)
 ![Google Gemini](https://img.shields.io/badge/Gemini-%234285F4.svg?style=for-the-badge&logo=google&logoColor=white)
 
@@ -80,7 +79,6 @@ Built with OpenCV and PyTorch. The computer vision pipeline handles lane boundar
 
 ### Embedded & IoT
 ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 
 ### Security & Infrastructure
 ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557CF2?style=for-the-badge&logo=kali-linux&logoColor=white)
@@ -89,7 +87,6 @@ Built with OpenCV and PyTorch. The computer vision pipeline handles lane boundar
 ![OWASP](https://img.shields.io/badge/OWASP-%23000000.svg?style=for-the-badge&logo=owasp&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-
 
 ---
 

@@ -9,6 +9,7 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/benyamin-mahamed)
+[![Portfolio](https://img.shields.io/badge/Portfolio-benyaminmahamed.netlify.app-orange?style=for-the-badge&logo=firefox&logoColor=white)](https://benyaminmahamed.netlify.app)
 [![Email](https://img.shields.io/badge/Email-benyaminmahamed%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:benyaminmahamed@gmail.com)
 
 </div>
@@ -46,7 +47,7 @@ Four modes — Q&A, structured summarisation, peer-review critique, multi-paper 
 
 Co-founded this live editorial platform for legal and commercial content, and develop it as part of a three-person engineering team. A Django-powered editorial CMS — a lightweight version of what a newsroom would run internally.
 
-My ownership: the Render deployment, the Cloudinary media layer, domain and email infrastructure, and primary production debugging. Shipped end-to-end: an access-gated Student Resources system, Beehiiv newsletter integration, and the submission notification pipeline. **1,000+ active users.** Architecture write-up: [blueprint-brief-architecture](https://github.com/BenyaminMahamed/blueprint-brief-architecture)
+My ownership: the Render deployment, the Cloudinary media layer, domain and email infrastructure, and primary production debugging. Shipped end-to-end: an access-gated Student Resources system, Beehiiv newsletter integration, and the submission notification pipeline. **Grew to 1,000+ registered users within five months of launch.** Architecture write-up: [blueprint-brief-architecture](https://github.com/BenyaminMahamed/blueprint-brief-architecture)
 
 <samp>Django · PostgreSQL · JavaScript · HTML/CSS · Linux · Gunicorn</samp>
 
@@ -64,13 +65,13 @@ Validated across a 10,298-frame integration session on physical hardware:
 |---|:---:|:---:|
 | Processing latency | < 200ms | **~10ms** (20× margin) |
 | Frame rate | ≥ 8 FPS | **~14 FPS** sustained |
-| Obstacle detection reliability | 100% | **100%**, zero false positives |
+| Obstacle detection | 100% in-session | **100% in-session**, zero false positives |
 | Manual override response | < 50ms | **< 10ms** |
 | Hardware cost | — | **< £200** |
 
 </div>
 
-Deliberately Classical CV rather than deep learning — YOLOv5 on a Pi CPU costs 80–120ms per frame before anything else, and a probabilistic model can't guarantee the 100% detection reliability a safety-critical assistive system needs. A class-agnostic blob detector can, in under 5ms.
+Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs 80–120ms per frame before anything else, and for a safety-critical assistive system I wanted deterministic, inspectable failure modes over a probabilistic model. A class-agnostic blob detector delivered that in under 5ms per frame.
 
 <samp>Python · OpenCV · NumPy · Picamera2 · Raspberry Pi 5 · PiCar-X SDK</samp>
 
@@ -120,15 +121,13 @@ Deliberately Classical CV rather than deep learning — YOLOv5 on a Pi CPU costs
 </td>
 <td valign="top" width="50%">
 
-**Embedded, Security & Infrastructure**
+**Embedded & Infrastructure**
 
 ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557CF2?style=for-the-badge&logo=kali-linux&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![OWASP](https://img.shields.io/badge/OWASP-%23000000.svg?style=for-the-badge&logo=owasp&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 </td>
 </tr>

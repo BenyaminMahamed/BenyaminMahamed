@@ -23,10 +23,21 @@
 <div align="center"><samp>— NOW BUILDING —</samp></div>
 <br/>
 
-| Project | What it is |
-|---|---|
-| **Basketball GM engine** | Possession-based Monte Carlo dynasty simulator, tuned phase-by-phase against real NBA statistical distributions (scoring, margins, pace), with a 1,000-game batch validation harness |
-| **Embedded CV performance** | Profiling where the milliseconds actually go in a classical vision loop on the Raspberry Pi 5 |
+### [Court Vision](https://court-vision-ng9w.onrender.com) — live
+
+A free, searchable library of basketball actions — mapping named concepts (pistol, Spain pick-and-roll, horns) to written breakdowns and film examples. Built to solve a real problem: when you start studying film, you can't name what you're watching, and stats sites give you numbers with no film while pro film tools are paywalled and coach-facing.
+
+Live and in active development. Core glossary shipped — Django with admin-driven content management, scouting-report pages, and a courtside interface — deployed on a Render + Neon stack. In progress: an `nba_api` pipeline for player shot charts and possession-level video, filterable by player and shot type (e.g. pull-up vs. catch-and-shoot) across a large historical range.
+
+<samp>Django · PostgreSQL (Neon) · nba_api · Render</samp>
+
+<br/>
+
+### Embedded CV performance profiling
+
+Profiling where the milliseconds actually go in a classical vision loop on the Raspberry Pi 5 — measuring per-stage cost across capture, preprocessing, and detection to understand the real-time budget of an embedded pipeline.
+
+<samp>Python · OpenCV · Raspberry Pi 5</samp>
 
 <br/>
 

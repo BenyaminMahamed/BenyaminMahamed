@@ -64,7 +64,7 @@ My ownership: the Render deployment, the Cloudinary media layer, domain and emai
 
 <br/>
 
-### [Autonomous Navigation System](https://github.com/BenyaminMahamed/FINALYEARPROJECT) — final year project
+### [Autonomous Navigation System](https://github.com/BenyaminMahamed/FINALYEARPROJECT) — Final Year Project
 
 Real-time lane following and obstacle detection on a Raspberry Pi 5, built as a proof-of-concept for affordable assistive mobility. The core question: can you replicate the navigation capabilities of £5,000+ commercial systems for under £200?
 

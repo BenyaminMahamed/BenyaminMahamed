@@ -25,11 +25,17 @@
 
 ### [Court Vision](https://court-vision-ng9w.onrender.com) — live
 
-A free, searchable library of basketball actions — mapping named concepts (pistol, Spain pick-and-roll, horns) to written breakdowns and film examples. Built to solve a real problem: when you start studying film, you can't name what you're watching, and stats sites give you numbers with no film while pro film tools are paywalled and coach-facing.
+A free basketball film-study web app. Two features: a searchable library of basketball actions (pistol, Spain pick-and-roll, horns) mapping named concepts to written breakdowns and key reads — and **interactive NBA shot charts where clicking any shot opens that exact possession's clip on NBA.com**. Built to solve a real problem: when you start studying film you can't name what you're watching, stats sites give you numbers with no film, and pro film tools are paywalled and coach-facing.
 
-Live and in active development. Core glossary shipped — Django with admin-driven content management, scouting-report pages, and a courtside interface — deployed on a Render + Neon stack. In progress: an `nba_api` pipeline for player shot charts and possession-level video, filterable by player and shot type (e.g. pull-up vs. catch-and-shoot) across a large historical range.
+Live and in active development.
 
-<samp>Django · PostgreSQL (Neon) · nba_api · Render</samp>
+- **~50,000 shots across 50 players** (2025–26 season), pulled via `nba_api` through a local, resumable, idempotent ingestion pipeline. NBA's API blocks cloud IPs, so ingestion runs locally and the deployed app only reads from the DB — FG% validated against real stats.
+- **Interactive SVG shot charts** rendered from raw court coordinates (orange makes / grey misses), with per-zone shooting splits, a stat strip, season filter, and a dots/zones toggle.
+- **Click-to-film:** each shot dot is a native SVG link to its exact possession on NBA.com, built purely from stored game/event/season fields — no video hosting, no caching, legal by construction.
+
+<samp>Django · PostgreSQL (Neon) · nba_api · Render · WhiteNoise</samp>
+
+*Next up:* shot-type filtering — pull-up vs. catch-and-shoot, with in-page clips (`action_type` data already stored).
 
 <br/>
 
@@ -46,7 +52,7 @@ Profiling where the milliseconds actually go in a classical vision loop on the R
 
 ### [Lexis — AI Research Assistant](https://github.com/BenyaminMahamed/AI-Research-Assistant)
 
-A RAG pipeline built from scratch — no LangChain, no abstractions. PDFs are extracted page-by-page with PyMuPDF, chunked into 500-word overlapping windows, embedded with `all-MiniLM-L6-v2` (384-dim, normalised), and indexed in FAISS. Queries run nearest-neighbour search and pass the top-k chunks as grounded context to Gemini 2.0 Flash.
+A RAG pipeline built from scratch — no LangChain, no abstractions. PDFs are extracted page-by-page with PyMuPDF, chunked into 500-word overlapping windows, embedded with \`all-MiniLM-L6-v2\` (384-dim, normalised), and indexed in FAISS. Queries run nearest-neighbour search and pass the top-k chunks as grounded context to Gemini 2.0 Flash.
 
 Four modes — Q&A, structured summarisation, peer-review critique, multi-paper comparison. Every answer surfaces the source chunks and page numbers it was based on. Built because tools like ChatPDF felt like black boxes with no source grounding.
 

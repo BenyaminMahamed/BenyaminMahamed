@@ -2,9 +2,9 @@
 
 # Benyamin Mahamed
 
-<samp>Backend Engineering · Applied AI · Computer Vision</samp>
+<samp>Recent Computer Science Graduate · Backend Engineering · Applied AI</samp>
 
-<samp>BSc (Hons) Computer Science — University of Westminster, 2026 — London, UK</samp>
+<samp>BSc (Hons) Computer Science, 2:1 — University of Westminster, 2026 — London, UK</samp>
 
 <br/>
 
@@ -16,7 +16,7 @@
 
 <br/>
 
-> I build things at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms. Currently looking for junior backend / AI engineering roles.
+> I build things at the intersection of backend engineering and AI — RAG pipelines, computer vision systems, editorial platforms serving real users. Currently looking for junior software engineering / full-stack roles in London.
 
 <br/>
 
@@ -39,30 +39,22 @@ Live and in active development.
 
 <br/>
 
-### Embedded CV performance profiling
-
-Profiling where the milliseconds actually go in a classical vision loop on the Raspberry Pi 5 — measuring per-stage cost across capture, preprocessing, and detection to understand the real-time budget of an embedded pipeline.
-
-<samp>Python · OpenCV · Raspberry Pi 5</samp>
-
-<br/>
-
 <div align="center"><samp>— SHIPPED —</samp></div>
 <br/>
 
 ### [Lexis — AI Research Assistant](https://github.com/BenyaminMahamed/AI-Research-Assistant)
 
-A RAG pipeline built from scratch — no LangChain, no abstractions. PDFs are extracted page-by-page with PyMuPDF, chunked into 500-word overlapping windows, embedded with \`all-MiniLM-L6-v2\` (384-dim, normalised), and indexed in FAISS. Queries run nearest-neighbour search and pass the top-k chunks as grounded context to Gemini 2.0 Flash.
+A RAG pipeline built from scratch — no LangChain, no abstractions. PDFs are extracted page-by-page with PyMuPDF, chunked into 500-word overlapping windows, embedded with `all-MiniLM-L6-v2` (384-dim, normalised), and indexed in FAISS. Queries run nearest-neighbour search and pass the top-k chunks as grounded context to Gemini 2.0 Flash.
 
-Four modes — Q&A, structured summarisation, peer-review critique, multi-paper comparison. Every answer surfaces the source chunks and page numbers it was based on. Built because tools like ChatPDF felt like black boxes with no source grounding.
+Four modes — Q&A, structured summarisation, peer-review critique, multi-paper comparison. Every answer surfaces the source chunks and page numbers it was based on. Containerised with Docker and covered by a 13-test suite running in GitHub Actions CI. Built because tools like ChatPDF felt like black boxes with no source grounding.
 
-<samp>Django · DRF · FAISS · Sentence-Transformers · PyMuPDF · Gemini 2.0 Flash · SQLite</samp>
+<samp>Django · DRF · FAISS · Sentence-Transformers · PyMuPDF · Gemini 2.0 Flash · Docker</samp>
 
 <br/>
 
 ### [The BluePrint Brief](https://theblueprintbrief.com) — private repo, live in production
 
-Co-founded this live editorial platform for legal and commercial content, and develop it as part of a three-person engineering team. A Django-powered editorial CMS — a lightweight version of what a newsroom would run internally.
+Co-founded this live editorial platform for legal and commercial content in March 2025, and develop it as part of a three-person engineering team. A Django-powered editorial CMS — a lightweight version of what a newsroom would run internally.
 
 My ownership: the Render deployment, the Cloudinary media layer, domain and email infrastructure, and primary production debugging. Shipped end-to-end: an access-gated Student Resources system, Beehiiv newsletter integration, and the submission notification pipeline. **Grew to 1,000+ registered users within five months of launch.** Architecture write-up: [blueprint-brief-architecture](https://github.com/BenyaminMahamed/blueprint-brief-architecture)
 
@@ -88,7 +80,7 @@ Validated across a 10,298-frame integration session on physical hardware:
 
 </div>
 
-Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs 80–120ms per frame before anything else, and for a safety-critical assistive system I wanted deterministic, inspectable failure modes over a probabilistic model. A class-agnostic blob detector delivered that in under 5ms per frame.
+Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs 80–120ms per frame before anything else, and for a safety-critical assistive system I wanted deterministic, inspectable failure modes over a probabilistic model. A class-agnostic blob detector delivered that in under 5ms per frame. [Full demo video →](https://www.youtube.com/watch?v=ol9_oAe9Ogk)
 
 <samp>Python · OpenCV · NumPy · Picamera2 · Raspberry Pi 5 · PiCar-X SDK</samp>
 
@@ -101,15 +93,14 @@ Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs
 <tr>
 <td valign="top" width="50%">
 
-**Languages**
+**Backend & Web**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092e20.svg?style=for-the-badge&logo=django&logoColor=white)
+![Django REST Framework](https://img.shields.io/badge/DRF-%23092e20.svg?style=for-the-badge&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/sql-%2300758F.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 </td>
 <td valign="top" width="50%">
@@ -127,24 +118,23 @@ Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs
 <tr>
 <td valign="top" width="50%">
 
-**Web & Backend**
+**Languages**
 
-![Django](https://img.shields.io/badge/django-%23092e20.svg?style=for-the-badge&logo=django&logoColor=white)
-![Django REST Framework](https://img.shields.io/badge/DRF-%23092e20.svg?style=for-the-badge&logo=django&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![SQL](https://img.shields.io/badge/sql-%2300758F.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 </td>
 <td valign="top" width="50%">
 
-**Embedded & Infrastructure**
+**Tools & Infrastructure**
 
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![OWASP](https://img.shields.io/badge/OWASP-%23000000.svg?style=for-the-badge&logo=owasp&logoColor=white)
 
 </td>
 </tr>

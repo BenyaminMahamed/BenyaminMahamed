@@ -91,7 +91,7 @@ Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs
 
 <div align="center">
 
-<img src="https://github.pumbas.net/api/contributions/BenyaminMahamed?colour=E8500A&bgColour=0D1B2A&dotColour=C9A96E&days=180&borderRadius=8" width="800" height="220" alt="Contributions" />
+<img src="https://ghchart.rshah.org/E8500A/BenyaminMahamed" alt="Contributions" width="800" />
 
 </div>
 

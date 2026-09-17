@@ -86,6 +86,17 @@ Deliberately classical CV rather than deep learning — YOLOv5 on a Pi CPU costs
 
 <br/>
 
+<div align="center"><samp>— ACTIVITY —</samp></div>
+<br/>
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=BenyaminMahamed&bg_color=0D1B2A&color=F0E6D3&line=E8500A&point=C9A96E&area=true&area_color=E8500A&hide_border=true&custom_title=Contribution%20Activity)
+
+</div>
+
+<br/>
+
 <div align="center"><samp>— STACK —</samp></div>
 <br/>
 
